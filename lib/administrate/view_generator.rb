@@ -19,7 +19,7 @@ module Administrate
 
       copy_file(
         template_file,
-        "app/views/admin/#{resource_path}/#{template_file}",
+        "app/views/manager/#{resource_path}/#{template_file}",
       )
     end
 

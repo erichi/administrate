@@ -35,7 +35,7 @@ module Administrate
 
       def create_resource_controller
         destination = Rails.root.join(
-          "app/controllers/admin/#{file_name.pluralize}_controller.rb",
+          "app/controllers/manager/#{file_name.pluralize}_controller.rb",
         )
 
         template("controller.rb.erb", destination)

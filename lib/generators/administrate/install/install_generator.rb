@@ -18,7 +18,7 @@ module Administrate
       def create_dashboard_controller
         copy_file(
           "application_controller.rb",
-          "app/controllers/admin/application_controller.rb"
+          "app/controllers/manager/application_controller.rb"
         )
       end
 
@@ -35,7 +35,7 @@ module Administrate
       end
 
       def dashboard_resources
-        Administrate::Namespace.new(:admin).resources
+        Administrate::Namespace.new(:manager).resources
       end
     end
   end
