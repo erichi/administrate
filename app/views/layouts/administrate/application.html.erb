@@ -27,12 +27,7 @@ By default, it renders:
 
   <div class="app-container">
 
-    <div class="sidebar">
-      <%= render "sidebar" -%>
-    </div>
-
     <main class="main-content" role="main">
-      <%= content_for(:search) %>
       <%= render "flashes" -%>
       <%= yield %>
     </main>

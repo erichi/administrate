@@ -5,7 +5,7 @@ module Administrate
     end
 
     def resources
-      [:account_records]
+      [:account_records, :accounts, :account_transactions]
 
       # namespace_controller_paths.uniq.map do |controller|
       #   controller.gsub(/^#{namespace}\//, "").to_sym
